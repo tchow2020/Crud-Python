@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from teste.views import nome
+from teste.views import email
 
 
 urlpatterns = [
     path('admin/', admin.site.urls), 
-    path('', nome), 
+    path('nome', nome),
+    path('email', email),
 ]
